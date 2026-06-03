@@ -1,0 +1,125 @@
+<section class="environmental-section">
+
+  <div class="environmental-shell">
+
+    <div class="environmental-label">
+      Environmental Cognition
+    </div>
+
+    <h2 class="environmental-title">
+      Direction shapes behavior.
+    </h2>
+
+    <p class="environmental-subtitle">
+      Directional system cues designed to reduce friction,
+      preserve clarity, and support sustainable movement
+      through real life.
+    </p>
+
+    <div class="cue-display">
+
+      <div class="cue-text" id="cueText">
+        Protect momentum.
+      </div>
+
+    </div>
+
+    <div class="cue-controls">
+
+      <button class="cue-button" id="prevCue">
+        ?
+      </button>
+
+      <button class="cue-button" id="nextCue">
+        ?
+      </button>
+
+      <div class="cue-index" id="cueIndex">
+        1 / 20
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<script>
+
+const cues = [
+
+  "Protect momentum.",
+  "Reduce static.",
+  "Carry clarity forward.",
+  "Direction beats mood.",
+  "Keep the environment breathable.",
+  "Design for continuity.",
+  "Structure creates freedom.",
+  "Stay difficult to destabilize.",
+  "Remove hidden drains.",
+  "Build rhythms, not bursts.",
+  "Reduce noise before seeking answers.",
+  "Make clarity visible.",
+  "Calm is operational power.",
+  "Small signals become trajectories.",
+  "Preserve long-range thinking.",
+  "Regulate before reacting.",
+  "Design around actual usage.",
+  "Protect recovery windows.",
+  "Preserve internal bandwidth.",
+  "Lower the cost of beginning."
+
+];
+
+let currentCue = 0;
+
+const cueText = document.getElementById("cueText");
+const cueIndex = document.getElementById("cueIndex");
+
+function updateCue() {
+
+  cueText.style.opacity = 0;
+
+  setTimeout(() => {
+
+    cueText.textContent = cues[currentCue];
+
+    cueIndex.textContent =
+      `${currentCue + 1} / ${cues.length}`;
+
+    cueText.style.opacity = 1;
+
+  }, 160);
+
+}
+
+document.getElementById("nextCue")
+  .addEventListener("click", () => {
+
+    currentCue =
+      (currentCue + 1) % cues.length;
+
+    updateCue();
+
+});
+
+document.getElementById("prevCue")
+  .addEventListener("click", () => {
+
+    currentCue =
+      (currentCue - 1 + cues.length) % cues.length;
+
+    updateCue();
+
+});
+
+setInterval(() => {
+
+  currentCue =
+    (currentCue + 1) % cues.length;
+
+  updateCue();
+
+}, 8000);
+
+</script>

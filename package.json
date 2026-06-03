@@ -1,20 +1,18 @@
-﻿{
-    "name":  "icy-clear-v2",
-    "type":  "module",
-    "version":  "0.0.1",
-    "engines":  {
-                    "node":  "\u003e=22.12.0"
-                },
-    "scripts":  {
-                    "dev":  "astro dev",
-                    "build":  "astro build",
-                    "preview":  "astro preview",
-                    "deploy":  "npm run build \u0026\u0026 gh-pages -d dist"
-                },
-    "dependencies":  {
-                         "astro":  "^6.1.9"
-                     },
-    "devDependencies":  {
-                            "gh-pages":  "^6.3.0"
-                        }
+{
+  "name": "icy-clear-v2",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "dependencies": {
+    "astro": "^6.1.9"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
 }
