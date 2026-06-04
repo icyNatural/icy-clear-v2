@@ -2205,37 +2205,3 @@ a:hover {
     inset: 10px;
   }
 }
-
-/* ===== TOP PERSONAL LINKS ===== */
-
-.top-links {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  margin-left: 18px;
-}
-
-.top-links a {
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: rgba(25,45,60,0.72);
-  text-decoration: none;
-}
-
-.top-links a:hover {
-  color: #4d9dd8;
-}
-
-@media (max-width: 760px) {
-  .top-links {
-    gap: 9px;
-    margin-left: 8px;
-  }
-
-  .top-links a {
-    font-size: 0.62rem;
-    letter-spacing: 0.04em;
-  }
-}
