@@ -1217,7 +1217,7 @@ section:hover .card:not(:hover) {
   }
 
   .card::after {
-    content: "â†’" !important;
+    content: "→" !important;
     position: absolute !important;
     right: 16px !important;
     top: 50% !important;
@@ -2551,32 +2551,8 @@ a:hover {
   }
 }
 
-/* MOBILE_APP_SHELL_CSS_START */
-
-/* ===== MOBILE APP SHELL MERGE: desktop preserved ===== */
-
-.mobile-app-shell-wrapper,
-.mobile-app-shell-wrapper .bottom-nav {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  body > main:not(.app-shell),
-  body > .page:not(.app-shell),
-  .desktop-site-shell {
-    display: none !important;
-  }
-
-  .mobile-app-shell-wrapper {
-    display: block !important;
-  }
-
-  .mobile-app-shell-wrapper .bottom-nav {
-    display: grid !important;
-  }
-
 /* =========================================================
-   ICY CLEAR OS â€” MOBILE APPLICATION REDESIGN OVERRIDE
+   ICY CLEAR OS — MOBILE APPLICATION REDESIGN OVERRIDE
    Keeps existing pages/links, upgrades home into app shell.
 ========================================================= */
 
@@ -2969,7 +2945,7 @@ main.app-shell {
 }
 
 .app-framework-card::after {
-  content: "â†’" !important;
+  content: "→" !important;
   position: absolute !important;
   right: 18px !important;
   top: 18px !important;
@@ -3221,27 +3197,5 @@ main.app-shell {
   .reveal-card {
     opacity: 1;
     transform: none;
-  }
-}
-
-}
-
-/* MOBILE_APP_SHELL_CSS_END */
-
-/* ===== FORCE MOBILE SHELL ===== */
-
-@media (max-width: 768px){
-
-  body{
-    background:#eef5fb !important;
-  }
-
-  .page,
-  main.page{
-    display:none !important;
-  }
-
-  .mobile-app-shell{
-    display:flex !important;
   }
 }

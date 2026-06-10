@@ -1,0 +1,317 @@
+---
+import "../styles/global.css";
+---
+
+<main class="page">
+  <nav class="top-nav">
+    <a href="/">Icy Clear</a>
+    <div class="top-links">
+  <a href="https://github.com/icyNatural" target="_blank" rel="noopener">GitHub</a>
+  <a href="https://icynatural.github.io/chad-hamilton-portfolio/" target="_blank" rel="noopener">Portfolio</a>
+</div>
+    <div>
+      <a href="#start" data-section="start">Start</a>
+      <a href="#models" data-section="models">Models</a>
+      <a href="#modes" data-section="modes">Modes</a>
+      <a href="#system" data-section="system">System</a>
+    </div>
+  </nav>
+  <section class="hero">
+    <div class="kicker">Icy Clear OS</div>
+
+    <div class="hero-core">
+      <h1 class="gradient">Icy Clear OS</h1>
+      <p class="hero-sub">See clearly before you explain.</p>
+    </div>
+
+    <p class="lead">Models that change how you read what's happening.</p>
+
+</section>
+
+  <section>
+    
+<section id="energy-engine" class="energy-safe-section">
+  <a class="energy-safe-card" href="https://icynatural.github.io/Energy_Engine/" target="_blank" rel="noopener">
+    <span class="energy-safe-label">LIVE APP</span>
+    <h2>Energy Engine</h2>
+    <p>Adaptive energy modeling for rhythm, recovery, baseline shifts, and daily direction.</p>
+    <strong>Open Energy Engine</strong>
+  </a>
+</section>
+
+<p id="start" class="section-title">Start Here</p>
+
+    <div class="grid">
+      <a class="card" href="/models/seeing-before-naming">
+        <h2>Seeing Before Naming</h2>
+        <p>Perception before labels.</p>
+      </a>
+
+      <a class="card" href="/models/replace-stories-with-systems">
+        <h2>Replace Stories with Systems</h2>
+        <p>See what is happening underneath.</p>
+      </a>
+
+      <a class="card" href="/models/clear-again">
+        <h2>Clear Again</h2>
+        <p>Return when things start to drift.</p>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    
+<section class="mobile-tab-launcher">
+  <div class="mobile-tabs">
+    <button class="mobile-tab active" data-tab="models">Models</button>
+    <button class="mobile-tab" data-tab="modes">Modes</button>
+    <button class="mobile-tab" data-tab="system">System</button>
+  </div>
+
+  <div class="mobile-tab-panel active" data-panel="models">
+    <a class="card" href="/models/from-reaction-to-pattern">
+      <h2>From Reaction to Pattern</h2>
+      <p>Track direction over time.</p>
+    </a>
+    <a class="card" href="/models/coherence-vs-entropy">
+      <h2>Coherence vs Entropy</h2>
+      <p>See whether things hold or break down.</p>
+    </a>
+    <a class="card" href="/models/value-formation">
+      <h2>Value Formation</h2>
+      <p>Notice what actually changes things.</p>
+    </a>
+  </div>
+
+  <div class="mobile-tab-panel" data-panel="modes">
+    <a class="card" href="/modes/parasympathetic-lead-mode">
+      <h2>Parasympathetic Lead Mode</h2>
+      <p>Rhythm, recovery, and settling.</p>
+    </a>
+    <a class="card" href="/modes/sympathetic-lead-mode">
+      <h2>Sympathetic Lead Mode</h2>
+      <p>Action, speed, and response.</p>
+    </a>
+  </div>
+
+  <div class="mobile-tab-panel" data-panel="system">
+    <a class="card" href="/system/return-not-scroll">
+      <h2>Return, Not Scroll</h2>
+      <p>A site you come back to.</p>
+    </a>
+    <a class="card" href="/system/from-mind-to-system">
+      <h2>From Mind to System</h2>
+      <p>Conditions shape behavior.</p>
+    </a>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll(".mobile-tab").forEach((tab) => {
+    tab.addEventListener("click", () => {
+      const target = tab.dataset.tab;
+
+      document.querySelectorAll(".mobile-tab").forEach((t) => {
+        t.classList.remove("active");
+      });
+
+      document.querySelectorAll(".mobile-tab-panel").forEach((panel) => {
+        panel.classList.remove("active");
+      });
+
+      tab.classList.add("active");
+      document.querySelector(`[data-panel="${target}"]`).classList.add("active");
+    });
+  });
+</script>
+
+
+<section class="mobile-only-tabs">
+
+  <div class="mobile-tab-buttons">
+    <button class="mobile-tab-btn active" data-tab="models">Models</button>
+    <button class="mobile-tab-btn" data-tab="modes">Modes</button>
+    <button class="mobile-tab-btn" data-tab="system">System</button>
+  </div>
+
+  <div class="mobile-tab-panel active" data-panel="models">
+
+    <a class="card" href="/models/from-reaction-to-pattern">
+      <h2>From Reaction to Pattern</h2>
+      <p>Track direction over time.</p>
+    </a>
+
+    <a class="card" href="/models/coherence-vs-entropy">
+      <h2>Coherence vs Entropy</h2>
+      <p>See whether things hold or break down.</p>
+    </a>
+
+    <a class="card" href="/models/value-formation">
+      <h2>Value Formation</h2>
+      <p>Notice what actually changes things.</p>
+    </a>
+
+  </div>
+
+  <div class="mobile-tab-panel" data-panel="modes">
+
+    <a class="card" href="/modes/parasympathetic-lead-mode">
+      <h2>Parasympathetic Lead Mode</h2>
+      <p>Rhythm, recovery, and settling.</p>
+    </a>
+
+    <a class="card" href="/modes/sympathetic-lead-mode">
+      <h2>Sympathetic Lead Mode</h2>
+      <p>Action, speed, and response.</p>
+    </a>
+
+  </div>
+
+  <div class="mobile-tab-panel" data-panel="system">
+
+    <a class="card" href="/system/return-not-scroll">
+      <h2>Return, Not Scroll</h2>
+      <p>A site you come back to.</p>
+    </a>
+
+    <a class="card" href="/system/from-mind-to-system">
+      <h2>From Mind to System</h2>
+      <p>Conditions shape behavior.</p>
+    </a>
+
+  </div>
+
+</section>
+
+<script>
+
+document.querySelectorAll(".mobile-tab-btn").forEach((btn)=>{
+
+  btn.addEventListener("click",()=>{
+
+    const target = btn.dataset.tab;
+
+    document.querySelectorAll(".mobile-tab-btn").forEach((b)=>{
+      b.classList.remove("active");
+    });
+
+    document.querySelectorAll(".mobile-tab-panel").forEach((p)=>{
+      p.classList.remove("active");
+    });
+
+    btn.classList.add("active");
+
+    document
+      .querySelector(`[data-panel="${target}"]`)
+      .classList.add("active");
+
+  });
+
+});
+
+</script>
+
+<p id="models" class="section-title">Models</p>
+
+    <div class="grid">
+      <a class="card small" href="/models/from-reaction-to-pattern">
+        <h2>From Reaction to Pattern</h2>
+        <p>Track direction over time.</p>
+      </a>
+
+      <a class="card small" href="/models/coherence-vs-entropy">
+        <h2>Coherence vs Entropy</h2>
+        <p>See whether things hold or break down.</p>
+      </a>
+
+      <a class="card small" href="/models/value-formation">
+        <h2>Value Formation</h2>
+        <p>Notice what actually changes things.</p>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <p id="modes" class="section-title">Modes</p>
+
+    <div class="grid">
+      <a class="card small" href="/modes/parasympathetic-lead-mode">
+        <h2>Parasympathetic Lead Mode</h2>
+        <p>Rhythm, recovery, and settling.</p>
+      </a>
+      <a class="card small" href="/modes/sympathetic-lead-mode">
+        <h2>Sympathetic Lead Mode</h2>
+        <p>Action, speed, and response.</p>
+      </a>
+    </div>
+  </section>
+  <section>
+    <p id="system" class="section-title">System</p>
+
+    <div class="grid">
+      <a class="card small" href="/system/return-not-scroll">
+        <h2>Return, Not Scroll</h2>
+        <p>A site you come back to.</p>
+      </a>
+      <a class="card small" href="/system/from-mind-to-system">
+        <h2>From Mind to System</h2>
+        <p>Conditions shape behavior.</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="return-rule">
+    <p>Grow, but remain stable.</p>
+  </section>
+
+<section class="environmental-section">
+  <div class="environmental-shell">
+    <p class="environmental-label">Environmental Cognition</p>
+
+    <h2 class="environmental-title">Direction shapes behavior.</h2>
+
+    <p class="environmental-subtitle">
+      Simple cues for guiding attention, reducing friction, and staying steady when emotion gets loud.
+    </p>
+
+    <div class="cue-display">
+      <p class="cue-text">Protect momentum.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<script>
+  // Active section observer
+  const navLinks = document.querySelectorAll(".top-nav a[data-section]");
+  const sectionTitles = document.querySelectorAll(".section-title[id]");
+
+  const setActive = (id) => {
+    navLinks.forEach((link) => {
+      link.classList.toggle("active", link.dataset.section === id);
+    });
+
+    sectionTitles.forEach((title) => {
+      title.closest("section")?.classList.toggle("section-active", title.id === id);
+    });
+  };
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      const visible = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+      if (visible) setActive(visible.target.id);
+    },
+    {
+      root: null,
+      threshold: [0.25, 0.4, 0.6],
+      rootMargin: "-25% 0px -55% 0px"
+    }
+  );
+
+  sectionTitles.forEach((title) => observer.observe(title));
+</script>
+
